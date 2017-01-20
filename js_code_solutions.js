@@ -1,16 +1,16 @@
 function palindrome(str) {
-  // Good luck!
+
+// replaces all non-alphnumeric characters with a regular expression
   
-  cleanStr = str.replace(/[^a-z0-9+]+/gi, '');
-  var backStr = "";
-  for(var i = cleanStr.length -1; i >= 0 ; i--){
-    backStr += cleanStr[i].toLowerCase();
-     console.log(str[i]);
-    
-   
-    
-    
-  } if (backStr.toLowerCase() === cleanStr.toLowerCase()){
+  
+  forwardsStr = str.replace(/[^a-z0-9+]+/gi, '');
+  var backwardsStr = "";
+  
+  // loop that iterates to build the string backwards in all lower case
+  
+  for(var i = forwardsStr.length -1; i >= 0 ; i--){
+    backwardsStr += forwardsStr[i].toLowerCase();
+    } if (backwardsStr.toLowerCase() === forwardsStr.toLowerCase()){
     return true;
   }
   else {
