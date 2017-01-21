@@ -23,3 +23,21 @@ function palindrome(str) {
 
 
 palindrome("hEEEllo__");
+
+
+//  Problem 2
+// Find the longest word in a string 
+function findLongestWord(str) {
+  var newStr =  str.split(' ');
+ var longestWord = 0;
+
+  for(var i = 0; i < newStr.length; i++)
+  
+   if(newStr[i].length > longestWord){
+	longestWord = newStr[i].length;
+}
+    return longestWord;
+  }
+
+
+findLongestWord("May the force be with you");
