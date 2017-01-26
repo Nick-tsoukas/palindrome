@@ -41,3 +41,16 @@ function findLongestWord(str) {
 
 
 findLongestWord("May the force be with you");
+
+
+//Problem nickname
+function nicknameGenerator(name) { 
+  var vowels = "aeiou";
+  var nName = name.slice(0,3)
+  
+    if (vowels.indexOf(nName[2]) >= 0) {
+      nName = name.slice(0,4);
+    };  
+  return 'The nickname for '+ name + ' is "' +nName +'"';  
+}
+console.log(nicknameGenerator("Branden"));
